@@ -11,7 +11,7 @@ import java.util.logging.Logger;
 @Named
 public class TestBatchlet implements Batchlet {
 
-    Logger log = Logger.getLogger(TestBatchlet.class.getName());
+    private static final Logger log = Logger.getLogger(TestBatchlet.class.getName());
 
     @Inject
     JobContext jobContext;
